@@ -1,8 +1,6 @@
 # Game-of-life
 Robin's Game of Life
 
-<sup>named after a teammate</sup>
-
 ## Contents
 
 * [Introduction](#introduction)
