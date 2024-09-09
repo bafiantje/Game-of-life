@@ -6,6 +6,7 @@ Robin's Game of Life
 * [Introduction](#introduction)
 * [The Rules](#the-rules)
 * [The Assignment](#the-assignment)
+* [Installation](#installation)
 * [Sources](#sources)
 
 ## Introduction
@@ -34,6 +35,25 @@ To decide if a dead cell gets revived the following rules have to be kept in min
 
 Our college assigned us to recreate The Game of Life. The catch is that we need to give it a creative approach. Do we want to make it more than just a game? Do we want to give it a unique twist? Do we just design the same game with a different visual approach ? This repository shows the people our approach.
 
+## Installation
+
+First off, make sure you have [python](#) installed. Then install the [pygame](#) library through terminal with:
+
+### Windows
+
+ ```powershell
+ pip install pygame
+ ```
+Then change directories to `Game-of-life` and run `python -u .\source\app.py` in terminal. 
+
+ ### MacOS
+
+ ?
+
+ ### Linux
+
+ ?
+
 ## Sources
 
 - [Conway's Game of Life](https://conwaylife.com/) by [Nathaniel Johnston](http://njohnston.ca/)
@@ -41,3 +61,5 @@ Our college assigned us to recreate The Game of Life. The catch is that we need 
 - [Checkbox variant with source code](https://huth.me/checkbox-life/) by [Andrew Huth](https://github.com/ahuth)
 
 - [Original publication of Conway](web.stanford.edu)
+
+- Our app icon is literally my face
