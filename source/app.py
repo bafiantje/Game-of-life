@@ -1,25 +1,25 @@
 import pygame
 from sys import exit
+from grid import Grid
 
 pygame.init()
-screen = pygame.display.set_mode((1280,720))
-pygame.display.set_caption("Game of Life")
+info_obj = pygame.display.Info()
+
+window_height = info_obj.current_h
+window_width = info_obj.current_w
+# currently just on 16:9 but * 10
+cell_size = info_obj.current_w // 160
+FPS = 12
+
+#my native monitor resolution is 1920 x 1080, but I made it a little smaller to fit the screen otherwise the window glitches and becomes borderless for me.
+screen = pygame.display.set_mode((window_width,window_height - 72))
+
+pygame.display.set_caption("Game of Life") # it said it, it said the thing!!!! :O
 pygame.display.set_icon(pygame.image.load("source/assets/app_icon.png"))
 clock = pygame.time.Clock()
-title_font = pygame.font.Font(None, 32)
 
-background_surface = pygame.image.load('source/assets/placeholder_background.png').convert()
-front_surface = pygame.Surface([1024,576], pygame.SRCALPHA, 32)
-front_surface.convert_alpha()
-front_surface.fill((55, 55, 55, 122))
-
-title_surface = title_font.render("Game of Life", True, (0,0,0))
-title_background_surface = pygame.Surface([title_surface.get_width() + 20, title_surface.get_height()], pygame.SRCALPHA, 32)
-title_background_surface.convert_alpha()
-title_background_surface.fill((255, 255, 255, 200))
-
-dead_color = (255,255,255)
-alive_color = (0,0,0)
+grid = Grid(window_width, window_height, cell_size)
+# grid.cells[2][1] = 1
 
 # With this loop the game will:
 # automatically draw all; 
@@ -29,14 +29,14 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
+            
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_F11:
+            # if you want to fullscreen
+            pygame.display.toggle_fullscreen()
     
     # blit stands for block image transfer
-    screen.blit(background_surface, (0,0))
-    screen.blit(front_surface, (128,72))
-    
-    screen.blit(title_background_surface, (640 - title_background_surface.get_width() // 2, 72 - title_background_surface.get_height() - 10))
-    screen.blit(title_surface, (640 - title_surface.get_width() // 2, 72 - title_surface.get_height() - 10))
-    # it said it, it said the thing!!!! :O
+    screen.fill('white')
+    grid.draw(screen)
 
     pygame.display.update()
-    clock.tick(30)
+    clock.tick(FPS)
