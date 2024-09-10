@@ -4,23 +4,32 @@ Robin's Game of Life
 ## Contents
 
 * [Introduction](#introduction)
-* [The Rules](#the-rules)
+* [How to Play](#how-to-play)
+
+    - The Rules
+    - Instructions
 * [The Assignment](#the-assignment)
 * [Installation](#installation)
+    
+    - Windows
+    - MacOS
+    - Linux
+
 * [Sources](#sources)
 
 ## Introduction
 
 Mathematician John Conway developed and designed a game called "Life" around the 70s. This game tried to form a complexity with even the most simplest rules. Like DNA with any variety of complex molecules can form life.
 
-## The Rules
+## How to Play
+
+### The Rules
 
 The game of life is played in a 2-dimensional field of cells in a grid. Each cell can be dead or alive. 
 The game is played without any active players. The starting position of living cells can be decided by the player. When the living cells has been placed, the game can be started. This happens in rounds where cells die and where cells get born / revived. For that, the eight neighboring cells get checked. 
 
 For the destiny and doom of a living cell, the following rules have to be kept in mind:
 
-<!-- reminder: plaats onder elk bullet een foto die de regel goed 'visueel representeert' van ons opdracht. (Ik ben niet goed in begrijpend lezen). -->
 * A cell with 2 or 3 living neighbors is kept alive.
 
 * A cell with less than two or more than 3 living neighbors dies.
@@ -30,6 +39,22 @@ To decide if a dead cell gets revived the following rules have to be kept in min
 * A dead cell with 3 living neighbors gets revived.
 
 * A dead cell with more or less than 3 living neighbors stay dead.
+
+### Instructions
+
+To start the game. You can place your cells by clicking on each individual box visible on the screen. You'll know you have placed your cell if the box turns into a black color.
+
+To start the simulation, press Enter.
+
+To pause the simulation, press Space.
+
+To clear the simulation, press C.
+
+To randomize the simulation, press R.
+
+To slow down the simulation, press S.
+
+To speed up the simulation, press F.
 
 ## The Assignment
 
