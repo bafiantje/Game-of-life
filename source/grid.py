@@ -25,4 +25,8 @@ class Grid:
         for row in range(self.rows):
             for column in range(self.columns):
                 self.cells[row][column] = 0
+                
+    def toggle_cell(self, row, column):
+        if 0 <= row < self.rows and 0 <= column < self.columns:
+            self.cells[row][column] = not self.cells[row][column]  
         

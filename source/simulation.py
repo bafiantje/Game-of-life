@@ -12,10 +12,9 @@ class Simulation:
         self.grid.draw(window)
     
     def count_live_neighbors(self, grid, row, column):
-        # obviously, start with zero neighbors
         live_neighbors = 0
         
-        # Obviously, checks the neighbors next to a cell.
+        # Checks the neighbors next to a cell.
         # These are: Directly Above, Directly Below, Left, Right, Diagonal Upper Left, Diagonal Upper Right, Diagonal Lower Left, Diagonal Lower Right
         # It also checks if the cell is at the edge of the grid, and if so, it wraps around to the other side.
         neighbor_offsets = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
@@ -65,3 +64,7 @@ class Simulation:
     def create_random_state(self):
         if self.is_running() == False:
             self.grid.fill_random()
+            
+    def toggle_cell(self, row, column):
+        if self.is_running() == False:
+            self.grid.toggle_cell(row, column)
