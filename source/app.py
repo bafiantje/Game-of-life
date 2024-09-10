@@ -1,6 +1,7 @@
 import pygame
 from sys import exit
-from grid import Grid
+from simulation import Simulation
+# from grid import Grid
 
 pygame.init()
 info_obj = pygame.display.Info()
@@ -17,9 +18,15 @@ screen = pygame.display.set_mode((window_width,window_height - 72))
 pygame.display.set_caption("Game of Life") # it said it, it said the thing!!!! :O
 pygame.display.set_icon(pygame.image.load("source/assets/app_icon.png"))
 clock = pygame.time.Clock()
+simulation = Simulation(window_width, window_height, cell_size)
 
-grid = Grid(window_width, window_height, cell_size)
+# grid = Grid(window_width, window_height, cell_size)
 # grid.cells[2][1] = 1
+# simulation.grid.cells[2][1] = 1
+# simulation.grid.cells[2][2] = 1
+# simulation.grid.cells[3][2] = 1
+# simulation.grid.cells[1][2] = 1
+# print(simulation.count_live_neighbors(simulation.grid, 2, 1))
 
 # With this loop the game will:
 # automatically draw all; 
@@ -34,9 +41,10 @@ while True:
             # if you want to fullscreen
             pygame.display.toggle_fullscreen()
     
+    simulation.update()
     # blit stands for block image transfer
     screen.fill('white')
-    grid.draw(screen)
+    simulation.draw(screen)
 
     pygame.display.update()
     clock.tick(FPS)

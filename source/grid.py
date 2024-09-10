@@ -1,4 +1,4 @@
-import pygame
+import pygame, random
 
 # The class that makes the grid. It doesn't have its own actual grid, 
 # rather just made the cells one pixel smaller in height and width, and given they're already accurately placed on a x and y axis, 
@@ -15,4 +15,9 @@ class Grid:
             for column in range(self.columns):
                 color = (155, 155, 155) if self.cells[row][column] == 0 else (0, 0, 0)
                 pygame.draw.rect(window, color, (column * self.cell_size, row * self.cell_size, self.cell_size - 1, self.cell_size - 1))
+                
+    def fill_random(self):
+        for row in range(self.rows):
+            for column in range(self.columns):
+                self.cells[row][column] = random.choice([1, 0, 0, 0])
         
