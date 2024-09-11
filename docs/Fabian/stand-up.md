@@ -1,0 +1,2 @@
+Tijdens de eerste dag heb ik samen met m'n originele twee teamgenoten afgesproken dat ik aan de game of life ging werken zodat als het klaar is we kunnen verzinnen wat voor creatief ding we er aan konden toewijzen.
+Op de tweede dag heb ik uiteindelijk de basis proto vorm van onze game of life afgemaakt en hebben we een extra teamgenoot toegevoegd aan ons team. Nu wachten we af op de user stories.
