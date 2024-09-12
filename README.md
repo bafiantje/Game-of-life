@@ -1,5 +1,6 @@
 # Game-of-life
-Robin's Game of Life
+Robin's Game of Life with a toroidal grid and aging cells
+<img src="source/assets/toroidal.gif">
 
 ## Contents
 
@@ -59,7 +60,7 @@ To speed up the simulation, press `F`.
 
 ## The Assignment
 
-Our college assigned us to recreate The Game of Life. The catch is that we need to give it a creative approach. Do we want to make it more than just a game? Do we want to give it a unique twist? Do we just design the same game with a different visual approach ? This repository shows the people our approach.
+Our college assigned us to recreate The Game of Life. The catch is that we need to give it a creative approach. Do we want to make it more than just a game? Do we want to give it a unique twist? Do we just design the same game with a different visual approach ? ~~We settled~~ I settled for a toroidal grid and aging cells.
 
 ## Installation
 
@@ -90,4 +91,6 @@ Then change directories to `Game-of-life` and run `python -u .\source\app.py` in
 
 - [Original publication of Conway](web.stanford.edu)
 
-- Our app icon is literally my face
+- Our app icon is literally my face 
+
+<img style="margin-left: 40px" width="52" src='source/assets/app_icon.png'>
