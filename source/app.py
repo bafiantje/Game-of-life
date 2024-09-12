@@ -61,7 +61,7 @@ while True:
             pygame.display.toggle_fullscreen()
     
     simulation.update()
-    screen.fill('white')
+    screen.fill('black')
     simulation.draw(screen)
 
     pygame.display.update()

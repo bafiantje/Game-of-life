@@ -44,9 +44,14 @@ class Simulation:
                             self.temp_grid.cells[row][column] = 1
                         else:
                             self.temp_grid.cells[row][column] = 0
+                            
             for row in range(self.rows):
                 for column in range(self.columns):
                     self.grid.cells[row][column] = self.temp_grid.cells[row][column]
+                    if self.grid.cells[row][column] == 1:
+                        self.grid.ages[row][column] += 1
+                    else:
+                        self.grid.ages[row][column] = 0
     
     def is_running(self):
         return self.run
