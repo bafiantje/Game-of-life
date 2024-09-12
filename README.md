@@ -63,7 +63,9 @@ Our college assigned us to recreate The Game of Life. The catch is that we need 
 
 ## Installation
 
-First off, make sure you have [python](#) installed. Then install the [pygame](#) library through terminal with:
+One day I'll be able to figure out how to make it an executeable.
+
+First off, make sure you have [python](https://www.python.org/) installed. Then install the [pygame](https://www.pygame.org/wiki/about) library through terminal with:
 
 ### Windows
 
