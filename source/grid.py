@@ -16,7 +16,7 @@ class Grid:
             for column in range(self.columns):
                 age = self.ages[row][column]
                 if self.cells[row][column] == 1:
-                    color = (55, 15, max(0, 255 - age * 10))
+                    color = (max(0, 255 - age * 10), 255, 255)
                 else:
                     color = (155, 155, 155)
                 pygame.draw.rect(window, color, (column * self.cell_size, row * self.cell_size, self.cell_size - 1, self.cell_size - 1))              
