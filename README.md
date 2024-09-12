@@ -1,5 +1,6 @@
 # Game-of-life
-Robin's Game of Life
+Robin's Game of Life with a toroidal grid and aging cells
+<img src="source/assets/toroidal.gif">
 
 ## Contents
 
@@ -88,4 +89,6 @@ Then change directories to `Game-of-life` and run `python -u .\source\app.py` in
 
 - [Original publication of Conway](web.stanford.edu)
 
-- Our app icon is literally my face
+- Our app icon is literally my face 
+
+<img style="margin-left: 40px" width="52" src='source/assets/app_icon.png'>
