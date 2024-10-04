@@ -1,22 +1,24 @@
 # Game-of-life
+
 Robin's Game of Life with a toroidal grid and aging cells
-<img src="source/assets/toroidal.gif">
+![toroidal preview](source/assets/toroidal.gif)
 
 ## Contents
 
-* [Introduction](#introduction)
-* [How to Play](#how-to-play)
+- [Introduction](#introduction)
+- [How to Play](#how-to-play)
 
-    - The Rules
-    - Instructions
-* [The Assignment](#the-assignment)
-* [Installation](#installation)
-    
-    - Windows
-    - MacOS
-    - Linux
+  - The Rules
+  - Instructions
 
-* [Sources](#sources)
+- [The Assignment](#the-assignment)
+- [Installation](#installation)
+
+  - Windows
+  - MacOS
+  - Linux
+
+- [Sources](#sources)
 
 ## Introduction
 
@@ -26,26 +28,27 @@ Mathematician John Conway developed and designed a game called "Life" around the
 
 ### The Rules
 
-The game of life is played in a 2-dimensional field of cells in a grid. Each cell can be dead or alive. 
-The game is played without any active players. The starting position of living cells can be decided by the player. When the living cells has been placed, the game can be started. This happens in rounds where cells die and where cells get born / revived. For that, the eight neighboring cells get checked. 
+The game of life is played in a 2-dimensional field of cells in a grid. Each cell can be dead or alive.
+The game is played without any active players. The starting position of living cells can be decided by the player. When the living cells has been placed, the game can be started. This happens in rounds where cells die and where cells get born / revived. For that, the eight neighboring cells get checked.
 
 To decide if a living cells get killed:
 
-* A cell with 2 or 3 living neighbors is kept alive.
+- A cell with 2 or 3 living neighbors is kept alive.
 
-* A cell with less than two or more than 3 living neighbors dies.
+- A cell with less than two or more than 3 living neighbors dies.
 
 To decide if a dead cell gets revived:
 
-* A dead cell with 3 living neighbors gets revived.
+- A dead cell with 3 living neighbors gets revived.
 
-* A dead cell with more or less than 3 living neighbors stay dead.
+- A dead cell with more or less than 3 living neighbors stay dead.
 
 ### Instructions
 
 To start the game. You can place your cells by clicking on each individual box visible on the screen. You'll know you have placed your cell if the box turns into a black color.
 
 To start the simulation, press `Enter`.
+
 > When the simulation has started. you can no longer place any cells until you stop the simulation.
 
 To pause the simulation, press `Space`.
@@ -70,18 +73,19 @@ First off, make sure you have [python](https://www.python.org/) installed. Then 
 
 ### Windows
 
- ```powershell
- pip install pygame
- ```
-Then change directories to `Game-of-life` and run `python -u .\source\app.py` in terminal. 
+```powershell
+pip install pygame
+```
 
- ### MacOS
+Then change directories to `Game-of-life` and run `python -u .\source\app.py` in terminal.
 
- ?
+### MacOS
 
- ### Linux
+?
 
- ?
+### Linux
+
+?
 
 ## Sources
 
@@ -91,6 +95,6 @@ Then change directories to `Game-of-life` and run `python -u .\source\app.py` in
 
 - [Original publication of Conway](web.stanford.edu)
 
-- Our app icon is literally my face 
+- Our app icon is literally my face
 
-<img style="margin-left: 40px" width="52" src='source/assets/app_icon.png'>
+![App Icon](source/assets/app_icon.png "App Icon")
